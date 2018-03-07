@@ -3,9 +3,13 @@
     <nav>
       <ul>
         <li><nuxt-link to="/" exact>Home</nuxt-link></li>
-        <li class="dropdown">
+        <li class="dropdown" 
+          @mouseover="display = 'block'" 
+          @mouseleave="display = 'none'" 
+          @click="display = 'none'"
+          >
           <nuxt-link :to="categories.length > 0 ? categories[0].link : ''" class="dropbtn">&#9662; Kategori</nuxt-link>
-          <div class="dropdown-content">
+          <div class="dropdown-content" :style="{display: display}">
             <nuxt-link 
               v-for="category in categories" 
               :to="category.link" 
@@ -25,7 +29,8 @@
 export default {
   data: () => {
     return {
-      categories: []
+      categories: [],
+      display: "none"
     };
   },
   methods: {
@@ -124,7 +129,7 @@ li.dropdown {
 }
 
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
@@ -145,6 +150,6 @@ li.dropdown {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  /* display: block; */
 }
 </style>

@@ -1,4 +1,10 @@
 const pkg = require('./package')
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/wwwid/'
+  }
+} : {}
 
 module.exports = {
   mode: 'spa',
@@ -59,12 +65,12 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
   },
   manifest: {
     name: pkg.name,
     lang: 'id'
   },
-  router: { base: '/wwwid/' }
+  routerBase
 }

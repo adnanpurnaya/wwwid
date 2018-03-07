@@ -28,7 +28,7 @@ export default {
 .post {
   box-sizing: border-box;
   /* max-width: 900px; */
-  padding: 8px;
+  padding: 30px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #aaa;
   margin: 10px;

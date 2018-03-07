@@ -116,6 +116,7 @@ nav {
   list-style: none;
   background-color: #e9ecef;
   border-radius: 0.25rem;
+  font-size: 0.8em;
   /* min-width: 100%; */
   /* max-width: 900px; */
 }

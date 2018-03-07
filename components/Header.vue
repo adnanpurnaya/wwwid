@@ -19,7 +19,6 @@
             </nuxt-link>
           </div>
         </li>
-        <li><nuxt-link to="/about" exact>About</nuxt-link></li>
       </ul>
     </nav>
   </header>

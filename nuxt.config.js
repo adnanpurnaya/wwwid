@@ -74,6 +74,6 @@ module.exports = {
   },
   // routerBase
   router: {
-    base: '/wwwid/'
+    // base: '/wwwid/'
   }
 }

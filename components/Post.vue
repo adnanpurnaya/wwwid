@@ -39,7 +39,7 @@ export default {
   padding: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #aaa;
-  margin: 10px;
+  margin: 10px 10px 25px 10px;
 }
 .thumbnail {
   background-position: center;

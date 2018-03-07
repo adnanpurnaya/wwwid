@@ -1,10 +1,10 @@
 const pkg = require('./package')
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/wwwid/'
-  }
-} : {}
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/wwwid/'
+//   }
+// } : {}
 
 module.exports = {
   mode: 'spa',
@@ -72,5 +72,8 @@ module.exports = {
     name: pkg.name,
     lang: 'id'
   },
-  routerBase
+  // routerBase
+  router: {
+    base: '/wwwid/'
+  }
 }

@@ -32,9 +32,10 @@ export default {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #aaa;
   margin: 10px;
+  width: 100%;
 }
 .title {
-  font-size: 42px;
+  font-size: 2em;
   border-bottom: 1px solid #dbdfe1;
   margin-bottom: 15px;
 }

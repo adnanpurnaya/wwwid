@@ -4,11 +4,9 @@
       <ul>
         <li><nuxt-link to="/" exact>Home</nuxt-link></li>
         <li class="dropdown" 
-          @mouseover="display = 'block'" 
-          @mouseleave="display = 'none'" 
-          @click="display = 'none'"
+          @click="display = display == 'none' ? 'block' : 'none'"
           >
-          <nuxt-link :to="categories.length > 0 ? categories[0].link : ''" class="dropbtn">&#9662; Kategori</nuxt-link>
+          <a class="dropbtn" href="#">&#9662; Kategori</a>
           <div class="dropdown-content" :style="{display: display}">
             <nuxt-link 
               v-for="category in categories" 

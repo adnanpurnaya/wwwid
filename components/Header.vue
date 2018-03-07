@@ -91,12 +91,15 @@ export default {
 <style scoped>
 header {
   width: 100%;
-  height: 40px;
+  height: 47px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   border-bottom: 1px solid #dbdfe1;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 
 ul {

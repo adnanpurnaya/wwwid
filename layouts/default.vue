@@ -24,6 +24,9 @@ html {
     Roboto, Helvetica Neue, Arial, sans-serif;
   color: #333;
 }
+body { 
+  padding-top: 60px; 
+}
 figure img {
   width: 100%;
 }

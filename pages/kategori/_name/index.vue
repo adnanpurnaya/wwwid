@@ -53,55 +53,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .posts {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-}
-
-nav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 10px;
-}
-
-.breadcrumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  /* margin-bottom: 1rem; */
-  margin: 0;
-  list-style: none;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-  /* min-width: 100%; */
-  /* max-width: 900px; */
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  color: #6c757d;
-  content: "/";
-}
-
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline;
-}
-
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none;
-}
-
-.breadcrumb-item.active {
-  color: #6c757d;
 }
 </style>

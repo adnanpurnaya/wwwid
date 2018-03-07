@@ -1,7 +1,15 @@
 <template>
-  <section class="posts">
-    <PostDetail :post="post"/>
-  </section>
+  <div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><nuxt-link to="/">Home</nuxt-link></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
+      </ol>
+    </nav>
+    <section class="posts">
+      <PostDetail :post="post"/>
+    </section>
+  </div>
 </template>
 
 <script>

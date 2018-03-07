@@ -65,5 +65,6 @@ module.exports = {
   manifest: {
     name: pkg.name,
     lang: 'id'
-  }
+  },
+  router: { base: '/wwwid/' }
 }

@@ -12,16 +12,16 @@ workboxSW.precache([
     "revision": "94635c4dc2d6d6106c8644ac93be3563"
   },
   {
-    "url": "/wwwid/_nuxt/layouts/default.35752d788bfe6fcccbc2.js",
-    "revision": "23ec7998ade0103c39fd3f1e06458618"
+    "url": "/wwwid/_nuxt/layouts/default.b41e2d5f8b9e94dca4e3.js",
+    "revision": "752125a89ebec23d91be813bb82dfb51"
   },
   {
-    "url": "/wwwid/_nuxt/manifest.ba41f1d85226449c1338.js",
-    "revision": "1127d2096e3aaea9224eac9ba1ef519c"
+    "url": "/wwwid/_nuxt/manifest.108029bcb9a02aae4e28.js",
+    "revision": "c3a3c30a1a06f78ef2c2f4ad3851291a"
   },
   {
-    "url": "/wwwid/_nuxt/pages/_slug/index.bb5260c44cd75ec80397.js",
-    "revision": "9f6593dcba055092ac505c162ac93811"
+    "url": "/wwwid/_nuxt/pages/_slug/index.2eb67b0297ce00e2f992.js",
+    "revision": "3eeabe5a6fc9112e6a078a3fc31da1da"
   },
   {
     "url": "/wwwid/_nuxt/pages/index.8d1e853a334fbcaa4c64.js",

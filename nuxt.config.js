@@ -66,7 +66,8 @@ module.exports = {
     */
     extend(config, ctx) {
 
-    }
+    },
+    vendor: ['lazysizes']
   },
   manifest: {
     name: pkg.name,

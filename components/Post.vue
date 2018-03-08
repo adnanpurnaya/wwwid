@@ -3,7 +3,7 @@
   <article class="post">
     <!-- <div class="thumbnail" :style="{backgroundImage: 'url(' + post.thumbnail + ')'}"></div> -->
     <div class="thumbnail">
-      <img :data-src="fetchImage(post.thumbnail)" class="lazyload" :alt="post.title" />
+      <img src="fetchImage(post.thumbnail)" class="" :alt="post.title" />
     </div>
     <div>
       <h1>{{ post.title }}</h1>

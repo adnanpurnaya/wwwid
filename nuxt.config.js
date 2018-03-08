@@ -21,7 +21,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'dns-prefetch', href: 'https://cdn-images-1.medium.com' }
+      { rel: 'dns-prefetch', href: 'https://cdn-images-1.medium.com/' }
     ]
   },
 

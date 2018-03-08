@@ -31,8 +31,8 @@ export default {
       return objDate.toLocaleDateString("id");
     },
     fetchImage: img => {
-      return img;
-      // return "https://res.cloudinary.com/adnan/image/fetch/h_200,f_auto/" + img;
+      // return img;
+      return "https://res.cloudinary.com/adnan/image/fetch/h_200,f_auto/" + img;
     }
   }
 };

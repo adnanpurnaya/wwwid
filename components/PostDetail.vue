@@ -7,7 +7,7 @@
       <span class="author">Oleh {{ post.author }}</span>
       <span class="pubDate">pada {{ formatDate(post.pubDate) }}</span>
     </div>
-    <div v-html="post.content"></div>
+    <div class="content" v-html="post.content"></div>
     <nuxt-link class="badge badge-secondary" v-for="category in post.categories" :key="category" :to="'/kategori/' + category">{{ category }}</nuxt-link>
   </article>
 </template>
@@ -47,5 +47,8 @@ export default {
 .pubDate {
   color: #6c757d !important;
   font-size: 90%;
+}
+.content {
+  overflow: hidden;
 }
 </style>

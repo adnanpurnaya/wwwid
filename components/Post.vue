@@ -3,7 +3,7 @@
   <article class="post">
     <!-- <div class="thumbnail" :style="{backgroundImage: 'url(' + post.thumbnail + ')'}"></div> -->
     <div class="thumbnail">
-      <img :data-src="post.thumbnail" class="lazyload" :alt="post.title" />
+      <img :data-src="fetchImage(post.thumbnail)" class="lazyload" :alt="post.title" />
     </div>
     <div>
       <h1>{{ post.title }}</h1>
@@ -29,6 +29,9 @@ export default {
     formatDate: date => {
       const objDate = new Date(date);
       return objDate.toLocaleDateString("id");
+    },
+    fetchImage: img => {
+      return "https://res.cloudinary.com/adnan/image/fetch/h_200,c_thumb/" + img;
     }
   }
 };

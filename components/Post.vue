@@ -3,7 +3,7 @@
   <article class="post">
     <!-- <div class="thumbnail" :style="{backgroundImage: 'url(' + post.thumbnail + ')'}"></div> -->
     <div class="thumbnail">
-      <img :src="fetchImage(post.thumbnail)" class="" :alt="post.title" />
+      <img :data-src="fetchImage(post.thumbnail)" class="lazyload" :alt="post.title" />
     </div>
     <div>
       <h1>{{ post.title }}</h1>
@@ -31,8 +31,8 @@ export default {
       return objDate.toLocaleDateString("id");
     },
     fetchImage: img => {
-      return img;
-      // return "https://res.cloudinary.com/adnan/image/fetch/h_200,f_auto/" + img;
+      // return img;
+      return "https://res.cloudinary.com/adnan/image/fetch/h_200,f_auto/" + img;
     }
   }
 };

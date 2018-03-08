@@ -2,7 +2,9 @@
   <nuxt-link :to="'/' + post.slug">
   <article class="post">
     <!-- <div class="thumbnail" :style="{backgroundImage: 'url(' + post.thumbnail + ')'}"></div> -->
-    <img :data-src="post.thumbnail" class="thumbnail lazyload" />
+    <div class="thumbnail">
+      <img :data-src="post.thumbnail" class="lazyload" />
+    </div>
     <div>
       <h1>{{ post.title }}</h1>
     </div>
@@ -45,8 +47,12 @@ export default {
 .thumbnail {
   /* background-position: center; */
   /* background-size: cover; */
-  width: 100%;
+  /* width: 100%; */
   height: 200px;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
 }
 .author {
   color: #6c757d !important;

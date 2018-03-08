@@ -6,7 +6,7 @@
         <li class="dropdown" 
           @click="display = display == 'none' ? 'block' : 'none'"
           >
-          <a class="dropbtn" href="#">&#9662; Kategori</a>
+          <a class="dropbtn" href="javascript:void(0)">&#9662; Kategori</a>
           <div class="dropdown-content" :style="{display: display}">
             <nuxt-link 
               v-for="category in categories" 
